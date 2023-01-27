@@ -26,9 +26,9 @@ table {
   }
   
   td, th {
-    border: 1px solid #dddddd;
+    border: 3px solid #dddddd;
     text-align: center;
-    padding: 1/6%;
+    padding: 2.5%;
     width: 33%;
   }
   
