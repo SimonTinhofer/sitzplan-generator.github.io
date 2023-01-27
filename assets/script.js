@@ -1,30 +1,21 @@
 /*
 class Table {
-
     constructor(length){
         this.students = new Array(length);
     }
-
-
     get length(){
         return this.students.length;
     }
-
     getStudent(index){
         return this.students[index];
     }
 }
-
 class Room {
     // [[2,2,2] , [2,2,2], [2,2,2,2]]
     constructor(structure){
-
     }
-
     getTable()
 }
-
-
 */
 
 
@@ -35,12 +26,12 @@ let nameList = [
     "Alexandra",
     "Andrea",
     "Baran",
-    "Chirstina",
+    "Kristina",
     "David",
     "Duha",
-    "Elisaveta",
+    "Elizaveta",
     "Illia",
-    "Isa",
+    "Isabel",
     "Karolina",
     "Leon",
     "Lorand",
