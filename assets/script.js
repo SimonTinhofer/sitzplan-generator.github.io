@@ -1,47 +1,47 @@
   
 let nameList = [
-    "Amro",
-    "Alexandra",
-    "Andrea",
-    "Baran",
-    "Kristina",
-    "David",
-    "Duha",
-    "Elizaveta",
-    "Illia",
-    "Isabel",
-    "Karolina",
-    "Leon",
-    "Lorand",
-    "Malin",
-    "Mona",
-    "Philipp",
-    "Simon",
-    "Vlada",
-    "Vladimir",
-    "Yasin"
+    " Amro",
+    " Alexandra",
+    " Andrea",
+    " Baran",
+    " Kristina",
+    " David",
+    " Duha",
+    " Elizaveta",
+    " Illia",
+    " Isabel",
+    " Karolina",
+    " Leon",
+    " Lorand",
+    " Malin",
+    " Mona",
+    " Philipp",
+    " Simon",
+    " Vlada",
+    " Vladimir",
+    " Yasin"
 ]
 
 
 let TableList = [ 
     [
-        ["",""],
-        ["",""],
-        ["",""],
-        ["",""],
-        ["",""]
+        ["", ""],
+        ["", ""],
+        ["", ""],
+        ["", ""],
+        ["", ""]
     ],
 
     [
-        ["",""],
-        ["",""],
-        ["",""],
-        ["",""]
+        ["", ""],
+        ["", ""],
+        ["", ""],
+        ["", ""]
     ], 
 
     [
-        ["",""],
-        ["",""]
+        ["", ""],
+        ["", ""]
     ]
 ]
 
@@ -101,23 +101,23 @@ function createPlan(){
     else{
         TableList =   [  
             [
-                ["Alexandra","Baran"],
-                ["Yasin","leerer Platz"],
-                ["Mona","Vlada"],
-                ["Amro","Andrea"],
-                ["Simon","Isa"]
+                ["Alexandra", " Baran"],
+                ["Yasin", " leerer Platz"],
+                ["Mona", " Vlada"],
+                ["Amro", " Andrea"],
+                ["Simon", " Isa"]
             ],
     
             [
-                ["Duha","Elizaveta"],
-                ["Illia","Karolina"],
-                ["David","Kristina"],
-             ["Leon","Lorand"]
+                ["Duha", " Elizaveta"],
+                ["Illia", " Karolina"],
+                ["David", " Kristina"],
+                ["Leon", " Lorand"]
             ], 
     
             [
-                ["Malin","Philipp"],
-                ["leerer PLatz","Vladimir"]
+                ["Malin", " Philipp"],
+                ["leerer PLatz", " Vladimir"]
             ]
         ]
     }
