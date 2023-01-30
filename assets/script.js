@@ -82,14 +82,9 @@ function shuffle(array) {
   
     return array
 }
-var specialPLan = false;
-function specialPlan(){
-    specialPLan = true;
-}
 function createPlan(){
     shuffle(nameList)
     // Schülernamen aus array ziehen und plätze einzeln durchlaufen
-    if(!specialPLan){
         let s = 0;
         for(let i = 0; i < TableList.length; i++){
         for (let j = 0; j < TableList[i].length; j++){
@@ -97,33 +92,6 @@ function createPlan(){
                 s += 2;
             }
         }
-    }
-    else{
-        TableList =   [  
-            [
-                ["Alexandra", " Baran"],
-                ["Yasin", " leerer Platz"],
-                ["Mona", " Vlada"],
-                ["Amro", " Andrea"],
-                ["Simon", " Isa"]
-            ],
-    
-            [
-                ["Duha", " Elizaveta"],
-                ["Illia", " Karolina"],
-                ["David", " Kristina"],
-                ["Leon", " Lorand"]
-            ], 
-    
-            [
-                ["Malin", " Philipp"],
-                ["leerer PLatz", " Vladimir"]
-            ]
-        ]
-    }
-    
-    
-
     document.getElementById('t00').textContent = TableList[0][0];
     document.getElementById('t01').textContent = TableList[1][0];
     document.getElementById('t02').textContent = TableList[2][0];
