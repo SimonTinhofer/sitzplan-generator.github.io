@@ -22,7 +22,6 @@ let nameList = [
     " Yasin"
 ]
 
-
 let TableList = [ 
     [
         ["", ""],
