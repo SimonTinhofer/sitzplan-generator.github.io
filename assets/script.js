@@ -86,12 +86,12 @@ function createPlan(){
     shuffle(nameList);
     // Schülernamen aus array ziehen und plätze einzeln durchlaufen
         let s = 0;
-        for(let i = 0; i < TableList.length; i++){
+    for(let i = 0; i < TableList.length; i++){
         for (let j = 0; j < TableList[i].length; j++){
                 TableList[i][j] = Array(nameList[s], nameList[s+1]) // Was ist dann bei Tischen die nicht 2 plätze haben? 
                 s += 2;
             }
-        }
+    }
     document.getElementById('t00').textContent = TableList[0][0];
     document.getElementById('t01').textContent = TableList[1][0];
     document.getElementById('t02').textContent = TableList[2][0];
