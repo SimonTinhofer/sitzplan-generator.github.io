@@ -8,7 +8,6 @@ let nameList = [
     " David",
     " Duha",
     " Elizaveta",
-    " Illia",
     " Isabel",
     " Karolina",
     " Leon",
@@ -19,7 +18,8 @@ let nameList = [
     " Simon",
     " Vlada",
     " Vladimir",
-    " Yasin"
+    " Yasin",
+    " Illia"
 ]
 
 let TableList = [ 
@@ -28,7 +28,6 @@ let TableList = [
         ["", ""],
         ["", ""],
         ["", ""],
-        ["", ""]
     ],
 
     [
@@ -64,31 +63,26 @@ while(nrOfStudents < nrOfPlaces)
 
 // Array mischen
 
-function shuffle(array) {
-    let currentIndex = array.length,  randomIndex;
+function shuffleArray(array) {
+    let currentIndex = array.length;
   
-    // While there remain elements to shuffle.
-    while (currentIndex != 0) {
+    while (--currentIndex > 0) {
+      const randomIndex = Math.floor(Math.random() * (currentIndex + 1));
   
-      // Pick a remaining element.
-      randomIndex = Math.floor(Math.random() * currentIndex);
-      currentIndex--;
-  
-      // And swap it with the current element.
-      [array[currentIndex], array[randomIndex]] = 
-      [array[randomIndex], array[currentIndex]];
+      [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
     }
   
-    return array
-}
+    return array;
+  }
 function createPlan(){
-    nameList == shuffle(nameList);
-    shuffle(nameList);
-    // Schülernamen aus array ziehen und plätze einzeln durchlaufen
+    shuffleArray(nameList)
+    console.log(nameList);  
         let s = 0;
-    for(let i = 0; i < TableList.length; i++){
+    
+        for(let i = 0; i < TableList.length; i++){
         for (let j = 0; j < TableList[i].length; j++){
                 TableList[i][j] = Array(nameList[s], nameList[s+1]) // Was ist dann bei Tischen die nicht 2 plätze haben? 
+                
                 s += 2;
             }
     }
@@ -102,8 +96,8 @@ function createPlan(){
     document.getElementById('t21').textContent = TableList[1][2];
     document.getElementById('t30').textContent = TableList[0][3];
     document.getElementById('t31').textContent = TableList[1][3];
-    document.getElementById('t40').textContent = TableList[0][4];
     specialPLan = false;
-  }
+}
+  
 
 
