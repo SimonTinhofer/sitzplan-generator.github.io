@@ -82,7 +82,8 @@ function shuffle(array) {
     return array
 }
 function createPlan(){
-    shuffle(nameList)
+    nameList == shuffle(nameList);
+    shuffle(nameList);
     // Schülernamen aus array ziehen und plätze einzeln durchlaufen
         let s = 0;
         for(let i = 0; i < TableList.length; i++){
